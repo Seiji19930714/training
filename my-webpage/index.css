@@ -1,0 +1,172 @@
+header {
+    display: grid;
+    height: 100px;
+    grid-template-columns: 20% 50% 30%;
+    justify-content: center;
+    align-content: center;
+
+    background-color: #5F524F;
+    padding: 20px;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+}
+#logo {
+    border: 1px solid #fff;
+    padding: 10px;
+    width: 50%;
+}
+header div:first-child {
+    border: 1px solid #fff;
+    padding: 10px;
+    width: 50%;
+}
+#slogan {
+    color: #fff;
+    font-weight: normal;
+    font-size: 1.5em;
+    font-family: 'EB Garamond', serif;
+    letter-spacing: 0.1em;
+    line-height: 1.5em;
+    text-transform: uppercase;
+    text-shadow: 0.07em 0.07em 0 rgba(0, 0, 0, 0.1);
+    padding-top: 0.1em;
+}
+
+#slogan::before, .slogan::after {
+    content: "§";
+    display: inline-block;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+    opacity: 0.2;
+    margin: 0 0.5em;
+    font-size: 1em;
+}
+#search form {
+    float: right;
+    margin-top: 14px;
+    position: relative;
+    width: 170px;
+    height: 40%;
+}
+
+#search form input {
+    padding: 6px;
+}
+
+#search form i {
+    position: absolute;
+    right: 0px;
+    top: 8px;
+    color: green;
+}
+nav {
+    border: 1px solid #ccc;
+}
+
+nav ul {
+    /* allow centering to work  */
+    display: table;
+    margin: 0 auto;
+}
+
+nav ul li {
+    display: inline-block;
+    height: 15px;
+    padding: 20px;
+}
+#main {
+    display: grid;
+    grid-template-columns: 75% auto;
+    grid-column-gap: 10px;
+    min-height: 500px;
+}
+
+#main-content, #sidebar {
+    padding: 5px 20px;
+    border: 1px solid;
+}
+
+#sidebar ul li {
+    padding: 10px 0;
+}
+footer {
+    background-color: #5F524F;
+    padding: 20px;
+
+    display: grid;
+    grid-template-columns: auto 75%;
+}
+header, footer {
+    background-color: #5F524F;
+    padding: 20px;
+}
+
+#login {
+    position: absolute;
+    z-index: 100;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 30px 0;
+    display: none;
+    width: 320px;
+    top: 55px;
+    right: 20px;
+}
+
+#login input {
+    margin: 0 auto;
+    display: block;
+    width: 50%;
+    background: #e6e6e6;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+#login button {
+    font-family: Montserrat-Bold;
+    font-size: 15px;
+    color: #fff;
+    text-transform: uppercase;
+    width: 68%;
+    height: 50px;
+    border-radius: 25px;
+    background: #57b846;
+    margin-right: 50px;
+    margin-top: 20px;
+    border: none;
+}
+
+#login button:hover {
+    background: #333333;
+}
+
+#login label  {
+    display: block;
+    width: 100%;
+    text-align: left;
+    margin-left: 80px;
+}
+
+#login label input {
+    display: inline-block;
+    height: 20px;
+    position: absolute;
+    left: -20px;
+}
+#scroll {
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    background-color: rgba(2, 129, 1, 0.85);
+    text-align: center;        
+}
+
+#scroll a { color: #fff; }
+#scroll i { margin-top: 8px; }
+
